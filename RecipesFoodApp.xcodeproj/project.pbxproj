@@ -12,6 +12,10 @@
 		6498DE802726268C0037E079 /* Login&SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6498DE7F2726268C0037E079 /* Login&SignUpViewController.swift */; };
 		64B434E627265A7900C9CFB8 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B434E527265A7800C9CFB8 /* CustomButtons.swift */; };
 		64B434EB27266DE100C9CFB8 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B434EA27266DE100C9CFB8 /* CustomLabel.swift */; };
+		64C4F6E42728A7E400F499B3 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4F6E32728A7E400F499B3 /* LogInViewController.swift */; };
+		64C4F6E62728A7F200F499B3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4F6E52728A7F200F499B3 /* SignUpViewController.swift */; };
+		64C4F6E82728B1B700F499B3 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4F6E72728B1B700F499B3 /* UITextFieldExtension.swift */; };
+		64C4F6EA2728B31300F499B3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4F6E92728B31300F499B3 /* CustomTextField.swift */; };
 		64CB4FA927260DAD0053D8C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB4FA827260DAD0053D8C6 /* AppDelegate.swift */; };
 		64CB4FAB27260DAD0053D8C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB4FAA27260DAD0053D8C6 /* SceneDelegate.swift */; };
 		64CB4FB027260DAD0053D8C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CB4FAE27260DAD0053D8C6 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 		64B434E527265A7800C9CFB8 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		64B434EA27266DE100C9CFB8 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		64B61864B4905D02D7CFA15A /* Pods_RecipesFoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipesFoodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C4F6E32728A7E400F499B3 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		64C4F6E52728A7F200F499B3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		64C4F6E72728B1B700F499B3 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		64C4F6E92728B31300F499B3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		64CB4FA527260DAD0053D8C6 /* RecipesFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CB4FA827260DAD0053D8C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CB4FAA27260DAD0053D8C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,7 @@
 				6498DE7C2726251F0037E079 /* CustomColors.swift */,
 				64B434E527265A7800C9CFB8 /* CustomButtons.swift */,
 				64B434EA27266DE100C9CFB8 /* CustomLabel.swift */,
+				64C4F6E92728B31300F499B3 /* CustomTextField.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -70,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				6498DE7F2726268C0037E079 /* Login&SignUpViewController.swift */,
+				64C4F6E32728A7E400F499B3 /* LogInViewController.swift */,
+				64C4F6E52728A7F200F499B3 /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -77,6 +88,7 @@
 		64B434E7272668F900C9CFB8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				64C4F6E72728B1B700F499B3 /* UITextFieldExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -240,8 +252,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CB4FA927260DAD0053D8C6 /* AppDelegate.swift in Sources */,
+				64C4F6E82728B1B700F499B3 /* UITextFieldExtension.swift in Sources */,
 				64B434EB27266DE100C9CFB8 /* CustomLabel.swift in Sources */,
+				64C4F6E62728A7F200F499B3 /* SignUpViewController.swift in Sources */,
+				64C4F6EA2728B31300F499B3 /* CustomTextField.swift in Sources */,
 				6498DE7D2726251F0037E079 /* CustomColors.swift in Sources */,
+				64C4F6E42728A7E400F499B3 /* LogInViewController.swift in Sources */,
 				6498DE802726268C0037E079 /* Login&SignUpViewController.swift in Sources */,
 				64CB4FAB27260DAD0053D8C6 /* SceneDelegate.swift in Sources */,
 				64B434E627265A7900C9CFB8 /* CustomButtons.swift in Sources */,

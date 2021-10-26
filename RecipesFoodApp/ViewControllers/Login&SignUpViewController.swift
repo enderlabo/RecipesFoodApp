@@ -9,7 +9,7 @@ import UIKit
 
 class Login_SignUpViewController: UIViewController {
     
-    @IBOutlet weak var flavrLabel: UILabel!
+    @IBOutlet weak var flavrLabel: CustomLabel!
     @IBOutlet weak var logInButton: CustomButtons!
     @IBOutlet weak var dontHaveLabel: UILabel!
     @IBOutlet weak var signUpButton: CustomButtons!
@@ -26,6 +26,7 @@ class Login_SignUpViewController: UIViewController {
     //MARK: - Init UIElements
     func initProperties(){        
         signUpButton.putCustomWhiteButton()
+        flavrLabel.setSpacing(space: 2.0)
         
     }
 
