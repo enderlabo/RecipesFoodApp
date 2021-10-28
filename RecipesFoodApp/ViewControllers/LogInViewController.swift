@@ -16,6 +16,8 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var logInButton: CustomButtons!
     @IBOutlet weak var forgotLabel: CustomLabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +28,10 @@ class LogInViewController: UIViewController {
         //TODO: fix the DRY??
         textfieldEmail.setLeftPaddingPoints(10)
         textfieldPassword.setLeftPaddingPoints(10)
+        
+    }
+    //pops current VC in Stack
+    @IBAction func backButtonTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }

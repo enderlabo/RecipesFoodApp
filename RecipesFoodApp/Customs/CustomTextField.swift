@@ -24,5 +24,6 @@ class CustomTextField: UITextField {
         layer.borderColor = UIColor(hexString: "E0E0E0").cgColor
         
         attributedPlaceholder = NSAttributedString(string: placeholder!, attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "9E9E9E")!])
+
     }
 }

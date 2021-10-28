@@ -21,6 +21,7 @@
 		64CB4FB027260DAD0053D8C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CB4FAE27260DAD0053D8C6 /* Main.storyboard */; };
 		64CB4FB227260DAF0053D8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CB4FB127260DAF0053D8C6 /* Assets.xcassets */; };
 		64CB4FB527260DAF0053D8C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CB4FB327260DAF0053D8C6 /* LaunchScreen.storyboard */; };
+		64EDE89F2729C5C1000A8650 /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EDE89E2729C5C1000A8650 /* CustomNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		64CB4FB127260DAF0053D8C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64CB4FB427260DAF0053D8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64CB4FB627260DAF0053D8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EDE89E2729C5C1000A8650 /* CustomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigation.swift; sourceTree = "<group>"; };
 		CF4B60741B88891593209CDB /* Pods-RecipesFoodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipesFoodApp.debug.xcconfig"; path = "Target Support Files/Pods-RecipesFoodApp/Pods-RecipesFoodApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E14DCCA9B2B2AA8F31648E8E /* Pods-RecipesFoodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipesFoodApp.release.xcconfig"; path = "Target Support Files/Pods-RecipesFoodApp/Pods-RecipesFoodApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				64B434E527265A7800C9CFB8 /* CustomButtons.swift */,
 				64B434EA27266DE100C9CFB8 /* CustomLabel.swift */,
 				64C4F6E92728B31300F499B3 /* CustomTextField.swift */,
+				64EDE89E2729C5C1000A8650 /* CustomNavigation.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				6498DE802726268C0037E079 /* Login&SignUpViewController.swift in Sources */,
 				64CB4FAB27260DAD0053D8C6 /* SceneDelegate.swift in Sources */,
 				64B434E627265A7900C9CFB8 /* CustomButtons.swift in Sources */,
+				64EDE89F2729C5C1000A8650 /* CustomNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +448,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

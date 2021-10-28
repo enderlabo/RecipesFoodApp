@@ -16,6 +16,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var textfieldPassword: CustomTextField!
     @IBOutlet weak var createAccButton: CustomButtons!
     
+   
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,12 +26,16 @@ class SignUpViewController: UIViewController {
     }
     
     func initProperties(){
+
         signUpLabel.setSpacing(space: 2.0)
         //TODO: fix the DRY??
         textfieldEmail.setLeftPaddingPoints(10)
         texfieldName.setLeftPaddingPoints(10)
         textfieldPassword.setLeftPaddingPoints(10)
-        
+    }
+    //pops current VC in Stack
+    @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
     }
 
 }
