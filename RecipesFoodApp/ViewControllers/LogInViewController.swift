@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var logInLabel: CustomLabel!
     @IBOutlet weak var subLabel: CustomLabel!
@@ -17,6 +17,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var logInButton: CustomButtons!
     @IBOutlet weak var forgotLabel: CustomLabel!
     
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +34,24 @@ class LogInViewController: UIViewController {
     //pops current VC in Stack
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+}
+
+//MARK: - TextField Slides Up
+extension  LogInViewController {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("start tipying...")
+        topConstraint.constant = CGFloat(0)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        topConstraint.constant = CGFloat(45)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        topConstraint.constant = CGFloat(45)
+        textField.resignFirstResponder()
+        print("Stop tipying...")
+        return true
     }
 }
