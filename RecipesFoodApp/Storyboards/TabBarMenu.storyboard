@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="5184.6153846153848" y="1623.6966824644549"/>
         </scene>
-        <!--Favorite Table View Controller-->
+        <!--FAVORITES-->
         <scene sceneID="kEt-lM-J24">
             <objects>
                 <tableViewController id="rRq-8z-0Ar" customClass="FavoriteTableViewController" customModule="RecipesFoodApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,11 @@
                             <outlet property="delegate" destination="rRq-8z-0Ar" id="jv6-Dj-lk0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rKb-K5-FGG"/>
+                    <navigationItem key="navigationItem" title="FAVORITES" id="s2x-i0-n64">
+                        <barButtonItem key="rightBarButtonItem" image="Search" id="rmu-Nf-wAw">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbG-mN-nEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,6 +73,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.5490196078431373" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="kRR-fO-H4o" kind="relationship" relationship="viewControllers" id="SG3-D4-nDa"/>
@@ -79,9 +88,9 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUh-Na-iIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485" y="739"/>
+            <point key="canvasLocation" x="2072" y="716"/>
         </scene>
-        <!--Home Table View Controller-->
+        <!--FLAVR-->
         <scene sceneID="3wi-IK-N1X">
             <objects>
                 <tableViewController id="Qo9-Tt-0HK" customClass="HomeTableViewController" customModule="RecipesFoodApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,13 +113,20 @@
                             <outlet property="delegate" destination="Qo9-Tt-0HK" id="Icv-Gw-jsM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="o0M-Kc-ZVU"/>
+                    <navigationItem key="navigationItem" title="FLAVR" id="dYL-na-1eO">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Notifications" id="k0W-md-ltc">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Search" id="CkO-l5-wwm">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5u9-Xb-oFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-323.07692307692304" y="1623.6966824644549"/>
         </scene>
-        <!--Category Table View Controller-->
+        <!--CATEGORIES-->
         <scene sceneID="tYS-H5-WiW">
             <objects>
                 <tableViewController id="hfn-me-r0s" customClass="CategoryTableViewController" customModule="RecipesFoodApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,7 +149,11 @@
                             <outlet property="delegate" destination="hfn-me-r0s" id="qjS-4e-6m3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Jjl-z7-bB2"/>
+                    <navigationItem key="navigationItem" title="CATEGORIES" id="lXz-hj-I2W">
+                        <barButtonItem key="rightBarButtonItem" image="Search" id="U5s-Cq-ptw">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2c-TR-eV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,13 +163,16 @@
         <scene sceneID="oCF-O3-NKa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kRR-fO-H4o" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_home_grey" selectedImage="ic_home_orange" id="K7P-rR-gcm">
+                    <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="Home" id="K7P-rR-gcm">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kYN-Qm-REe">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -164,13 +187,16 @@
         <scene sceneID="FSZ-Fy-0T8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="664-yS-bqm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_recipes_grey" selectedImage="ic_recipes_orange" id="zo1-AV-h0R">
+                    <tabBarItem key="tabBarItem" title="" image="categories" selectedImage="categories" id="zo1-AV-h0R">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E8c-fa-NxH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -185,7 +211,8 @@
         <scene sceneID="koM-9U-DgZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W9G-4X-zwF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_favorites_grey" selectedImage="ic_favorites_orange" id="utc-Lj-zaF">
+                    <tabBarItem key="tabBarItem" title="" image="favorites" selectedImage="favorites" id="utc-Lj-zaF">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -206,7 +233,8 @@
         <scene sceneID="YAs-3u-rLj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xqg-3V-MiX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_profile_grey" selectedImage="ic_profile_orange" id="Ldh-Xz-V3M">
+                    <tabBarItem key="tabBarItem" title="" image="Account" selectedImage="Account" id="Ldh-Xz-V3M">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -225,15 +253,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Account" width="22" height="22"/>
+        <image name="Home" width="22" height="22"/>
+        <image name="Notifications" width="18" height="20"/>
+        <image name="Search" width="20" height="20"/>
+        <image name="categories" width="22" height="22"/>
+        <image name="favorites" width="22" height="22"/>
         <image name="ic_arrow_back" width="18" height="18"/>
-        <image name="ic_favorites_grey" width="18" height="16"/>
-        <image name="ic_favorites_orange" width="18" height="16"/>
-        <image name="ic_home_grey" width="18" height="15"/>
-        <image name="ic_home_orange" width="18" height="15"/>
-        <image name="ic_profile_grey" width="17" height="18"/>
-        <image name="ic_profile_orange" width="17" height="18"/>
-        <image name="ic_recipes_grey" width="15" height="18"/>
-        <image name="ic_recipes_orange" width="15" height="18"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
