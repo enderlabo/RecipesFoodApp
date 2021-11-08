@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeatureCollectionCellCollectionViewCell" customModule="RecipesFoodApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X51-pk-Pkd" userLabel="shadowView" customClass="CustomShadowView" customModule="RecipesFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrE-wt-M8F">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appetizer" translatesAutoresizingMaskIntoConstraints="NO" id="M5Z-SR-DxC">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="M5Z-SR-DxC" firstAttribute="leading" secondItem="LrE-wt-M8F" secondAttribute="leading" id="B8O-Hq-NJm"/>
+                                <constraint firstItem="M5Z-SR-DxC" firstAttribute="top" secondItem="LrE-wt-M8F" secondAttribute="top" id="KvZ-FO-ehc"/>
+                                <constraint firstAttribute="bottom" secondItem="M5Z-SR-DxC" secondAttribute="bottom" id="L9T-DQ-raf"/>
+                                <constraint firstAttribute="trailing" secondItem="M5Z-SR-DxC" secondAttribute="trailing" id="O7C-y1-yYz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LrE-wt-M8F" secondAttribute="bottom" id="05B-o6-WUY"/>
+                        <constraint firstAttribute="trailing" secondItem="LrE-wt-M8F" secondAttribute="trailing" id="PuX-UX-RCR"/>
+                        <constraint firstItem="LrE-wt-M8F" firstAttribute="top" secondItem="X51-pk-Pkd" secondAttribute="top" id="XVH-ik-QAB"/>
+                        <constraint firstItem="LrE-wt-M8F" firstAttribute="leading" secondItem="X51-pk-Pkd" secondAttribute="leading" id="xBV-Ra-rPD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="X51-pk-Pkd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1GW-WE-cN7"/>
+                <constraint firstItem="X51-pk-Pkd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4oN-R8-ZzG"/>
+                <constraint firstAttribute="bottom" secondItem="X51-pk-Pkd" secondAttribute="bottom" id="WhP-bA-aYz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="X51-pk-Pkd" secondAttribute="trailing" id="Zgc-y9-Lrj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="69"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="appetizer" width="640" height="428"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

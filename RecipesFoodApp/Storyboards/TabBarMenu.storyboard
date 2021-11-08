@@ -114,7 +114,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="FLAVR" id="dYL-na-1eO">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="Notifications" id="k0W-md-ltc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="dificulting" id="k0W-md-ltc">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Search" id="CkO-l5-wwm">
@@ -253,9 +253,9 @@
     <resources>
         <image name="Account" width="22" height="22"/>
         <image name="Home" width="22" height="22"/>
-        <image name="Notifications" width="18" height="20"/>
         <image name="Search" width="20" height="20"/>
         <image name="categories" width="22" height="22"/>
+        <image name="dificulting" width="22" height="22"/>
         <image name="favorites" width="22" height="22"/>
         <image name="ic_arrow_back" width="18" height="18"/>
         <systemColor name="labelColor">

@@ -68,6 +68,16 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
     
+    //MARK: - Show Custom cell
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let featureCell = cell as? FeatureCell
+        featureCell?.uiCollectionView.delegate = self
+        featureCell?.uiCollectionView.dataSource = self
+        
+        let collectionViewCellNib = UINib.init(nibName: "FeatureCollectionCell", bundle: nil)
+        featureCell?.uiCollectionView.register(collectionViewCellNib, forCellWithReuseIdentifier: "FeatureCollectionCell")
+    }
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HeaderMainView") as! HeaderMainView
         headerView.HeaderLabel.text = sections[section]
