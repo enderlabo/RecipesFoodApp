@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="3404.6153846153843" y="1623.6966824644549"/>
         </scene>
-        <!--Custom Tab Bar-->
+        <!--Tab Bar Controller-->
         <scene sceneID="r2J-pb-KK0">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarSection" id="8Ia-O6-LAB" customClass="CustomTabBar" customModule="RecipesFoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarSection" id="8Ia-O6-LAB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vF9-fh-enc">
                         <barButtonItem key="leftBarButtonItem" image="ic_arrow_back" id="yb6-Gy-vL6">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,18 +130,47 @@
         <scene sceneID="tYS-H5-WiW">
             <objects>
                 <tableViewController id="hfn-me-r0s" customClass="CategoryTableViewController" customModule="RecipesFoodApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ECy-Jf-VmO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ECy-Jf-VmO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qlw-G4-JL4">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoriesCell" rowHeight="62" id="Qlw-G4-JL4" customClass="CategoriesCell" customModule="RecipesFoodApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qlw-G4-JL4" id="sCK-cK-jCY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8U-Ou-y24" userLabel="ShadowView" customClass="CustomShadowView" customModule="RecipesFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="5" width="382" height="52"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSW-jc-2lf">
+                                                    <rect key="frame" x="8" y="6" width="366" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="kSW-jc-2lf" secondAttribute="bottom" constant="10" id="7rm-dJ-PoC"/>
+                                                <constraint firstItem="kSW-jc-2lf" firstAttribute="leading" secondItem="K8U-Ou-y24" secondAttribute="leadingMargin" id="gQx-hH-ben"/>
+                                                <constraint firstItem="kSW-jc-2lf" firstAttribute="trailing" secondItem="K8U-Ou-y24" secondAttribute="trailingMargin" id="hyr-Ug-ohF"/>
+                                                <constraint firstItem="kSW-jc-2lf" firstAttribute="top" secondItem="K8U-Ou-y24" secondAttribute="top" constant="6" id="xMY-bC-LxL"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="K8U-Ou-y24" firstAttribute="leading" secondItem="sCK-cK-jCY" secondAttribute="leading" constant="16" id="5DX-Vl-6F1"/>
+                                        <constraint firstAttribute="bottom" secondItem="K8U-Ou-y24" secondAttribute="bottom" constant="5" id="9Xf-as-P34"/>
+                                        <constraint firstItem="K8U-Ou-y24" firstAttribute="top" secondItem="sCK-cK-jCY" secondAttribute="top" constant="5" id="GTR-ec-sYz"/>
+                                        <constraint firstAttribute="trailing" secondItem="K8U-Ou-y24" secondAttribute="trailing" constant="16" id="MMG-81-hQU"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="kSW-jc-2lf" id="JnZ-Yc-ct1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -157,7 +186,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2c-TR-eV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1512.3076923076922" y="1623.6966824644549"/>
+            <point key="canvasLocation" x="1511.5942028985507" y="1623.2142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oCF-O3-NKa">

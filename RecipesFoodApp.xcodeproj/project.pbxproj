@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6314D511EA7761E3E840F554 /* Pods_RecipesFoodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B61864B4905D02D7CFA15A /* Pods_RecipesFoodApp.framework */; };
+		643D35C82749C8F9004EACD0 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643D35C72749C8F9004EACD0 /* CategoriesCell.swift */; };
 		645021C0272E047E00130999 /* RecipieCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645021BE272E047E00130999 /* RecipieCellTableViewCell.swift */; };
 		645021C1272E047E00130999 /* RecipieCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645021BF272E047E00130999 /* RecipieCellTableViewCell.xib */; };
 		6451DC3727321A7F00B1E6FC /* CustomShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6451DC3627321A7F00B1E6FC /* CustomShadowView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		643D35C72749C8F9004EACD0 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		645021BE272E047E00130999 /* RecipieCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipieCellTableViewCell.swift; sourceTree = "<group>"; };
 		645021BF272E047E00130999 /* RecipieCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipieCellTableViewCell.xib; sourceTree = "<group>"; };
 		6451DC3627321A7F00B1E6FC /* CustomShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				647D44DB27389C1E0098F162 /* HeaderMainView.xib */,
 				647D44DD2738B93C0098F162 /* FeatureCollectionCellCollectionViewCell.swift */,
 				647D44DF2738B95A0098F162 /* FeatureCollectionCell.xib */,
+				643D35C72749C8F9004EACD0 /* CategoriesCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				647D44DA27389C0F0098F162 /* HeaderMainView.swift in Sources */,
 				6498DE7D2726251F0037E079 /* CustomColors.swift in Sources */,
 				64C4F6E42728A7E400F499B3 /* LogInViewController.swift in Sources */,
+				643D35C82749C8F9004EACD0 /* CategoriesCell.swift in Sources */,
 				645021C0272E047E00130999 /* RecipieCellTableViewCell.swift in Sources */,
 				6498DE802726268C0037E079 /* Login&SignUpViewController.swift in Sources */,
 				64CB4FAB27260DAD0053D8C6 /* SceneDelegate.swift in Sources */,

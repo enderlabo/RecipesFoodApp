@@ -20,7 +20,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrE-wt-M8F">
                             <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appetizer" translatesAutoresizingMaskIntoConstraints="NO" id="M5Z-SR-DxC">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Minestrone Soup" translatesAutoresizingMaskIntoConstraints="NO" id="M5Z-SR-DxC">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
                                 </imageView>
                             </subviews>
@@ -56,7 +56,7 @@
         </view>
     </objects>
     <resources>
-        <image name="appetizer" width="640" height="428"/>
+        <image name="Minestrone Soup" width="208" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

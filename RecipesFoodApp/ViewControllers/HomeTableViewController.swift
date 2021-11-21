@@ -24,6 +24,7 @@ class HomeTableViewController: UITableViewController {
         let headerMainView = UINib.init(nibName: "HeaderMainView", bundle: nil)
         self.tableView.register(headerMainView, forHeaderFooterViewReuseIdentifier: "HeaderMainView")
 
+        
     }
 
     // MARK: - Table view data source
